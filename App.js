@@ -41,30 +41,7 @@ setStateLogout= () =>{
       );
     }else{
       return (
-       /*
-        <NavigationContainer>
-
-              <Drawer.Navigator  mode="modal" headerMode={'none'}  
-              drawerContent={props => <DrawerContentScreen { ...props}
-              onLogin={() => this.setStateLogin()}
-              />
-              
-              }>
-               
-               <Drawer.Screen name="Home" component={HomeScreen}
-                initialParams={{onLogout:this.setStateLogout.bind(this) }} 
-                />
-                <Drawer.Screen name="Buscar" component={BuscarGif} 
-                />
-                <Drawer.Screen name="Random" component={RandomGif} 
-                />
-               
-             
-            </Drawer.Navigator>
-
-        </NavigationContainer>
-          */
-
+     
       <NavigationContainer>
          <DrawerCustomNavigator onLogout={this.setStateLogout}/>
       </NavigationContainer>
